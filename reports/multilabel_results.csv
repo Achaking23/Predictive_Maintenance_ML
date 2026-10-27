@@ -1,0 +1,6 @@
+Failure Type,Description,Test Positives,Precision,Recall,F1,PR-AUC
+TWF,Tool Wear Failure,7,0.0556,0.1429,0.0800,0.0564
+HDF,Heat Dissipation Failure,27,0.9310,1.0000,0.9643,0.9974
+PWF,Power Failure,14,1.0000,1.0000,1.0000,1.0000
+OSF,Overstrain Failure,23,0.8077,0.9130,0.8571,0.9212
+RNF,Random Failure,2,0.0000,0.0000,0.0000,0.0015

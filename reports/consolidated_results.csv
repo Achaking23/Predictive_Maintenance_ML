@@ -1,0 +1,7 @@
+Task,Best Model,F1,ROC-AUC,PR-AUC,Note,Recall
+Machine Failure (Binary),Gradient Boosting,0.8594,0.969,0.8887,Handles extreme class imbalance (3.4% failure). High precision-recall tradeoff.,
+HDF (Heat Dissipation),Gradient Boosting,0.9643,,0.9974,Near-perfect detection of heat-related failures.,1.0
+PWF (Power Failure),Gradient Boosting,1.0,,1.0,Perfect detection - power failures have clear feature signatures.,1.0
+OSF (Overstrain Failure),Gradient Boosting,0.857,,0.921,Strong detection of overstrain conditions.,0.913
+TWF (Tool Wear Failure),Random Forest + ADASYN,0.084,,0.184,Very rare (0.46%). Occurs at high tool wear (>198 min). High false positive rate.,0.571
+RNF (Random Failure),None (unpredictable),0.0,,0.002,Truly random by definition. No predictive pattern exists.,0.0

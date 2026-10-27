@@ -1,0 +1,35 @@
+# Feature Configuration
+# ====================
+
+features:
+  raw:
+    - Air temperature [K]
+    - Process temperature [K]
+    - Rotational speed [rpm]
+    - Torque [Nm]
+    - Tool wear [min]
+
+  categorical:
+    - Type
+    - Product ID  (excluded from modeling)
+
+  engineered:
+    - name: Type_encoded
+      description: Label-encoded product type (H=0, L=1, M=2)
+    - name: temperature_diff
+      description: Process temperature - Air temperature (heat buildup)
+    - name: power_like
+      description: Torque * Rotational speed (mechanical power proxy)
+    - name: torque_per_speed
+      description: Torque / Rotational speed (operating condition ratio)
+    - name: wear_stage
+      description: Tool wear binned into 5 stages
+
+targets:
+  binary: Machine failure
+  multilabel:
+    - TWF   (Tool Wear Failure)
+    - HDF   (Heat Dissipation Failure)
+    - PWF   (Power Failure)
+    - OSF   (Overstrain Failure)
+    - RNF   (Random Failure)
