@@ -1,4 +1,4 @@
-# 🔧 Predictive Maintenance with Machine Learning
+﻿# 🔧 Predictive Maintenance with Machine Learning
 
 [![Python](https://img.shields.io/badge/Python-3.10%2B-blue)](https://python.org)
 [![scikit-learn](https://img.shields.io/badge/scikit--learn-1.4%2B-orange)](https://scikit-learn.org)
@@ -281,6 +281,6 @@ This project is licensed under the **MIT License** — see the [LICENSE](LICENSE
 <div align="center">
   <p>
     <strong>Made with ❤️ by the ML Pipeline Team</strong><br/>
-    <em>Part of the Atomic Chat AI Project</em>
+    <em>ML Pipeline Project</em>
   </p>
 </div>
